@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Text button</title>
+	</head>
+	<body>
+		<button class="button">Luck</button>
+		<button class="button">I am</button>
+		<button class="button">Your</button>
+		<button class="button">Father!</button>
+		
+		<script type="text/javascript">
+	 		var bt = document.getElementsByClassName('button');
+			var len = bt.length;
+			for( var i=0; i<len; i++) {
+	
+				console.log(bt[i].innerText);
+	
+			}
+		</script>
+	</body>
+</html>
