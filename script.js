@@ -8,15 +8,10 @@ for( var i=0; i<len; i++) {
 }
 
 var btn = document.getElementsByTagName('button')[0];
-btn.className += ' nowa-klasa';
+btn.classList.add('nowa-klasa');
 console.log(btn.className);
 /*
-var btn = document.getElementsByTagName('button')[0];
-btn.className -= 'button';
-console.log(btn.className);
 
- To była moja pierwsza mysl ale raczej nie moze tak byc. Zwraca NaN.
-*/
 var btn = document.getElementsByTagName('button')[0];
 btn.classList.remove('button');
 console.log(btn.className);
@@ -41,6 +36,8 @@ for( var i=0; i<len; i++) {
 */
 
 var btn2 = document.getElementsByTagName('button')[1];
-var btn2data = btn2.getAttribute('data-test');
-console.log(12);
+var btn2data = btn2.setAttribute('style', 'color: red');
+
+
+
 
